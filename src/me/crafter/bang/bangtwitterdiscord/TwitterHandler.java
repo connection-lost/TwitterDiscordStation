@@ -10,9 +10,4 @@ public class TwitterHandler {
 		steam.filter(new FilterQuery(DiscordWorker.ATTENTION));
 	}
 	
-	public static void main(String[] args){
-		System.out.println("Test: TwitterHandler");
-		run();
-	}
-	
 }

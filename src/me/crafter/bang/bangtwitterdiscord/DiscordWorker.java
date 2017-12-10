@@ -83,24 +83,6 @@ public class DiscordWorker {
     	connect();
     }
     
-    public static void main(String args[]){
-    	connect();
-    	
-    	wait(2000);
-    	System.out.println("Fetched guilds:");
-    	for (IGuild guild : client.getGuilds()){
-    		System.out.println(">" + guild.getName() + ": " + guild.getLongID());
-    		for (IChannel channel : guild.getChannels()){
-        		System.out.println(">>" + channel.getName() + ": " + channel.getLongID());
-        	}
-    	}
-    	
-    	IGuild bang = client.getGuildByID(GUILD_BANG);
-    	System.out.println("Locked into guild: " + bang.getName());
-    	sendMessage(CHANNEL_CHAT, "¤¹¤Ã¤´©`¤¤£¡");
-    	
-    }
-    
     public static void wait(int time){
     	try {
         	System.out.println("Waiting... (" + time + ")");

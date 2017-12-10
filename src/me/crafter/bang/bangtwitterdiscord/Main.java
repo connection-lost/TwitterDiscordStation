@@ -21,6 +21,7 @@ public class Main {
         		System.out.println(">>" + channel.getName() + ": " + channel.getLongID());
         	}
     	}
+    	
     	// Status clock task
     	timer.schedule(new ClockTask(), 1000, 1000*60);
     	
